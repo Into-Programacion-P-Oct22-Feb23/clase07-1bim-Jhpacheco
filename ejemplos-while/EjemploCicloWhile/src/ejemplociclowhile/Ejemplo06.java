@@ -29,10 +29,11 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
-
+            // control para hacer que un numero ingresado pueda tomar un numero
+            // deseado si es mayor al que el usuario pone 
             if (calificacion > 20) {
                 calificacion = 20;
             }
